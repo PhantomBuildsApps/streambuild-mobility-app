@@ -2,7 +2,6 @@ import UIKit
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
     func application(
@@ -12,7 +11,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow()
         self.window = window
 
-        let viewContoller = ViewController()
+        let viewContoller = MainViewController()
         let navigationController = UINavigationController(rootViewController: viewContoller)
 
         window.rootViewController = navigationController
@@ -21,4 +20,3 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-
